@@ -9,17 +9,17 @@
         </router-link>
         <ul>
           <li>
-            <router-link to="/" aria-label="Designo - Our Company">
+            <router-link to="/about" aria-label="Designo - Our Company">
               our company
             </router-link>
           </li>
           <li>
-            <router-link to="/" aria-label="Designo - Locations">
+            <router-link to="/locations" aria-label="Designo - Locations">
               locations
             </router-link>
           </li>
           <li>
-            <router-link to="/" aria-label="Designo - Contact">
+            <router-link to="/contact" aria-label="Designo - Contact">
               contact
             </router-link>
           </li>
@@ -111,6 +111,10 @@ li a {
   color: white;
 }
 
+nav li a:hover {
+  text-decoration: underline;
+}
+
 .details {
   display: flex;
   flex-direction: row;
@@ -145,6 +149,10 @@ p span {
 .col3 ul {
   display: flex;
   gap: 1rem;
+}
+
+.details li a:hover img {
+  outline: 0.0625rem solid #fff;
 }
 
 /* tablet */

@@ -1,5 +1,3 @@
-<script setup></script>
-
 <script>
 export default {
   name: "Header",
@@ -7,25 +5,23 @@ export default {
     
   }
 }
-
-  
 </script>
 
 <template>
   <header>
     <nav aria-label="main">
-      <RouterLink to="/home" aria-label="Designo - Home">
+      <RouterLink to="/" aria-label="Designo - Home">
         <img src="../assets/shared/desktop/logo-dark.png" alt="" width="196" height="24" />
       </RouterLink>
       <ul>
         <li>
-          <a href="/" aria-label="Designo - Company">our company</a>
+          <RouterLink to="/about" aria-label="Designo - Company">our company</RouterLink>
         </li>
         <li>
-          <a href="/" aria-label="Designo - Locations">locations</a>
+          <RouterLink to="/locations" aria-label="Designo - Locations">locations</RouterLink>
         </li>
         <li>
-          <a href="/" aria-label="contact">contact</a>
+          <RouterLink to="/contact" aria-label="contact">contact</RouterLink>
         </li>
       </ul>
     </nav>
@@ -57,5 +53,17 @@ li a {
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 2px;
+  color: #333136;
+}
+
+@media (max-width: 1140px) {
+  nav {
+    padding: 65px 20px;
+  }
+}
+
+/* mobile menu */
+@media (max-width: 610px) {
+
 }
 </style>
