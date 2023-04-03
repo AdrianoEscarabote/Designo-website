@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import Layout from "../components/Layout.vue"
 
 const router = createRouter({
@@ -7,13 +6,38 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'Home',
+      component: () => import('../views/HomeView.vue')
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
+      path: '/web-design',
+      name: 'Web Design',
+      component: () => import('../views/WebDesignView.vue')
+    },
+    {
+      path: "/app-design",
+      name: "App Design",
+      component: () => import("../views/AppDesignView.vue")
+    },
+    {
+      path: "/graphic-design",
+      name: "Graphic Design",
+      component: () => import("../views/GraphicDesignView.vue")
+    }, 
+    {
+      path: "/about",
+      name: "About",
+      component: () => import("../views/AboutView.vue")
+    },
+    {
+      path: "/locations",
+      name: "Locations",
+      component: () => import("../views/LocationsView.vue")
+    },
+    {
+      path: "/contact",
+      name: "Contact",
+      component: () => import("../views/ContactView.vue")
     }
   ]
 })
