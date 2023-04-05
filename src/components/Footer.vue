@@ -1,5 +1,3 @@
-
-
 <template>
   <footer>
     <div class="container">
@@ -25,19 +23,19 @@
           </li>
         </ul>
       </nav>
-      <div class="details">
-        <div class="col1">
+      <div class-name="details">
+        <div class-name="col1">
           <p>Designo Central Office
             <span>3886 Wellington Street</span>
             <span>Toronto, Ontario M9C 3J5</span>
           </p>
         </div>
-        <div class="col2">
+        <div class-name="col2">
           <p>Contac US (Central Office)</p>
           <p>P : +1 253-86308967</p>
           <p>M : contact@designo.co</p>
         </div>
-        <div class="col3">
+        <div class-name="col3">
           <ul>
             <li>
               <a href="www.facebook.com" target="_blank" aria-label="Facebook">
@@ -78,7 +76,6 @@ footer {
   background-color: #1D1C1E;
   color: white;
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -87,20 +84,17 @@ footer {
   width: 100%;
   padding: 4.5rem 10.3125rem 4.5rem 10.3125rem;
 }
-
 nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding-bottom: 2.5rem;
 }
-
 nav ul {
   display: flex;
   align-items: center;
   gap: 2.625rem;
 }
-
 li a {
   font-weight: 400;
   font-size: 0.875rem;
@@ -110,11 +104,9 @@ li a {
   text-decoration: none;
   color: white;
 }
-
 nav li a:hover {
   text-decoration: underline;
 }
-
 .details {
   display: flex;
   flex-direction: row;
@@ -150,18 +142,15 @@ p span {
   display: flex;
   gap: 1rem;
 }
-
 .details li a:hover img {
   outline: 0.0625rem solid #fff;
 }
-
 /* tablet */
 @media (max-width: 59.375rem) {
   .container {
     padding: 4.5rem 2.4375rem 4.5rem 2.4375rem;
   }
 }
-
 /* mobile */
 @media (max-width: 41.875rem) {
   .container {

@@ -27,7 +27,6 @@ section {
   padding: 10rem 10.3125rem 10rem 10.3125rem;
   color: #333136;
 }
-
 ul {
   width: 100%;
   max-width: 69.375rem;
@@ -35,7 +34,6 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-
 li {
   max-width: 21.875rem;
   display: flex;
@@ -45,7 +43,6 @@ li {
   text-align: center;
   position: relative;
 }
-
 li::before {
   content: "";
   position: absolute;
@@ -53,7 +50,6 @@ li::before {
   height: 12.625rem;
   background: url("../assets/shared/desktop/bg-pattern-small-circle.svg");
 }
-
 h3 {
   font-weight: 500;
   font-size: 1.25rem;
@@ -61,7 +57,6 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.3125rem;
 }
-
 p {
   font-weight: 400;
   font-size: 1rem;
@@ -77,5 +72,4 @@ p {
     gap: 2.625rem;
   }
 }
-
 </style>
