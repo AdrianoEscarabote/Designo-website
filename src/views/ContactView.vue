@@ -6,7 +6,6 @@ export default {
   name: "Designo Contact",
   data() {
     return {
-      isOpen: false,
       name: "",
       email: "",
       phone: "",
@@ -95,7 +94,7 @@ export default {
 </script>
 
 <template>
-  <Layout v-bind:isOpen="isOpen">
+  <Layout>
     <main>
       <div class="container">
         <section class="form">
