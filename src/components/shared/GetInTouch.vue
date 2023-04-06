@@ -6,7 +6,7 @@
         <p> Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
       </div>
       <div className="col2">
-        <RouterLink to="/contact">Get in touch</RouterLink>
+        <RouterLink to="/contact" aria-label="Designo - Contact">Get in touch</RouterLink>
       </div>
     </div>
   </section>

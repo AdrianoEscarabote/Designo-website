@@ -7,7 +7,7 @@
         </router-link>
         <ul>
           <li>
-            <router-link to="/about" aria-label="Designo - Our Company">
+            <router-link to="/about" aria-label="Designo - About">
               our company
             </router-link>
           </li>
@@ -38,27 +38,27 @@
         <div className="col3">
           <ul>
             <li>
-              <a href="www.facebook.com" target="_blank" aria-label="Facebook">
+              <a href="/" target="_blank" aria-label="Facebook">
                 <img src="../assets/shared/desktop/icon-facebook.svg" alt="" />
               </a>
             </li>
             <li>
-              <a href="www.youtube.com" target="_blank" aria-label="Youtube">
+              <a href="/" target="_blank" aria-label="Youtube">
                 <img src="../assets/shared/desktop/icon-youtube.svg" alt="" />
               </a>
             </li>
             <li>
-              <a href="www.twitter.com" target="_blank" aria-label="Twitter">
+              <a href="/" target="_blank" aria-label="Twitter">
                 <img src="../assets/shared/desktop/icon-twitter.svg" alt="">
               </a>
             </li>
             <li>
-              <a href="www.pinterest.com" target="_blank" aria-label="Pinterest">
+              <a href="/" target="_blank" aria-label="Pinterest">
                 <img src="../assets/shared/desktop/icon-pinterest.svg" alt="">
               </a>
             </li>
             <li>
-              <a href="www.instagram.com" target="_blank" aria-label="Instagram">
+              <a href="/" target="_blank" aria-label="Instagram">
                 <img src="../assets/shared/desktop/icon-instagram.svg" alt="">
               </a>
             </li>

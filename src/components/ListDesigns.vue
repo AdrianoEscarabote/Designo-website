@@ -104,7 +104,6 @@
     width: 100%;
     height: 12.5rem;
   }
-
   .grid-items .col2 {
     width: 100%;
     height: 26.875rem;

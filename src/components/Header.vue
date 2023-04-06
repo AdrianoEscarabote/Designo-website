@@ -24,8 +24,8 @@ export default {
         <img src="../assets/shared/desktop/logo-dark.png" alt="" width="196" height="24" />
       </RouterLink>
       <button @click="isOpen = !isOpen">
-        <img src="../assets/shared/mobile/icon-hamburger.svg" class="icon-menu" v-if=" !this.$props.isOpen " />
-        <img src="../assets/shared/mobile/icon-close.svg" class="icon-close" v-if=" this.$props.isOpen " />
+        <img src="../assets/shared/mobile/icon-hamburger.svg" class="icon-menu" v-if=" !this.$props.isOpen " alt="" />
+        <img src="../assets/shared/mobile/icon-close.svg" class="icon-close" v-if=" this.$props.isOpen " alt="" />
       </button>
       <div class="wrapper_list" :aria-expanded="{ 'true' : isOpen }" :class="{ 'open': isOpen }" @click="isOpen = !isOpen">
         <ul :class="{ 'list-mobile': isOpen }" @click="$event.stopPropagation()">
@@ -64,14 +64,12 @@ header {
   justify-content: center;
 }
 .icon-menu {
-  width: 1.25rem;
-  height: 1.25rem;
-  background: url("../assets/shared/mobile/icon-hamburger.svg");
+  width: 2.25rem;
+  height: 2.25rem;
 }
 .icon-close {
-  width: 1.25rem;
-  height: 1.25rem;
-  background: url("../assets/shared/mobile/icon-close.svg");
+  width: 2.25rem;
+  height: 2.25rem;
 }
 nav {
   width: 100%;
@@ -112,9 +110,14 @@ li a:hover {
     display: none;
   } 
   .wrapper_list {
-    position: absolute;
+    position: fixed;
     left: 0rem;
     top: 8.75rem;
+    z-index: 10000 !important;
+  }
+  button {
+    border: unset;
+    background: transparent;
   }
   .wrapper_list ul {
     display: flex;

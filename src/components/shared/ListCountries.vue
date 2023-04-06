@@ -1,20 +1,31 @@
+<script>
+import { RouterLink } from 'vue-router';
+
+export default {
+  name: "List Countries",
+  components: {
+    RouterLink
+  }
+}
+</script>
+
 <template>
   <section>
     <ul>
       <li>
         <img src="../../assets/shared/desktop/illustration-canada.svg" alt="Canada" />
         <p>Canada</p>
-        <a href="/" aria-label="Location Canada">see location</a>
+        <RouterLink to="/locations" aria-label="Location Canada">see location</RouterLink>
       </li>
       <li>
         <img src="../../assets/shared/desktop/illustration-australia.svg" alt="Australia">
         <p>Australia</p>
-        <a href="/" aria-label="Location Australia">see location</a>
+        <RouterLink to="/locations" aria-label="Location Australia">see location</RouterLink>
       </li>
       <li>
         <img src="../../assets/shared/desktop/illustration-united-kingdom.svg" alt="United Kingdom">
         <p>United Kingdom</p>
-        <a href="/" aria-label="Location United Kingdom">see location</a>
+        <RouterLink to="/locations" aria-label="Location United Kingdom">see location</RouterLink>
       </li>
     </ul>
   </section>
