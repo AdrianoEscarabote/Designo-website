@@ -96,7 +96,36 @@ export default {
 
 <style scoped>
 .container {
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative;
   padding: 0rem 10.3125rem;
+}
+main {
+  overflow: hidden;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  left: 0rem;
+  top: 20rem;
+  height: 37.125rem;
+  width: 100%;
+  max-width: 62.875rem;
+  z-index: -100;
+  background: url("../assets/shared/desktop/bg-pattern-leaf.svg") no-repeat;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  right: -26.25rem;
+  bottom: 26.25rem;
+  z-index: -100;
+  width: 100%;
+  max-width: 69.125rem;
+  height: 37.125rem;
+  background: url("../assets/shared/desktop/bg-pattern-leaf.svg") no-repeat;
+  transform: rotate(180deg);
 }
 .about-us,
 .word-class,
@@ -184,6 +213,10 @@ picture img {
 @media (max-width: 71.25rem) {
   .container {
     padding:  0rem 1.25rem;
+  }
+  .container::before,
+  .container::after {
+    display: none;
   }
   .about-us,
   .word-class,

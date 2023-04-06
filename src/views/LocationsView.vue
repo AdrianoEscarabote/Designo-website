@@ -16,7 +16,6 @@ export default {
 
 <template>
   <Layout>
-
     <main>
       <h1 class="sr-only">See our locations below</h1>      
       <div class="container">
@@ -100,9 +99,7 @@ export default {
         </section>
       </div>
       <GetInTouch />
-
     </main>
-    
   </Layout>
 </template>
 

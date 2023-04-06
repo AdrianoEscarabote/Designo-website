@@ -67,7 +67,23 @@ export default {
 <style scoped>
 .container {
   padding: 0rem 10.3125rem 10rem 10.3125rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative;
 }
+
+.container::before {
+  content: "";
+  position: absolute;
+  left: 0rem;
+  top: 20rem;
+  height: 37.125rem;
+  width: 100%;
+  max-width: 62.875rem;
+  z-index: -100;
+  background: url("../assets/shared/desktop/bg-pattern-leaf.svg") no-repeat;
+}
+
 .introduction {
   padding: 4.5rem 6rem 4.5rem 6rem;
   margin: 0 auto;
@@ -142,8 +158,8 @@ li p {
 .text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 30px 20px;
+  gap: 1.25rem;
+  padding: 1.875rem 1.25rem;
 }
 .designs {
   margin: 0 auto;
@@ -169,10 +185,20 @@ li p {
   color: #FFFFFF;
 }
 .projects .web {
-  background: #000000 url("../assets/home/desktop/image-web-design-small.jpg") no-repeat;
+  background: #00000099 url("../assets/home/desktop/image-web-design-small.jpg") no-repeat;
+  background-blend-mode: overlay;
+  transition: 0.2s ease-in-out;
 }
 .projects .app {
-  background: #000000 url("../assets/home/desktop/image-graphic-design.jpg") ;
+  background: #00000099 url("../assets/home/desktop/image-app-design.jpg") no-repeat;
+  background-blend-mode: overlay;
+  transition: 0.2s ease-in-out;
+}
+.projects .app:hover,
+.projects .app:focus-visible,
+.projects .web:hover,
+.projects .web:focus-visible {
+  background-color: #e7826b3b;
 }
 .projects h3 {
   font-weight: 500;
@@ -210,6 +236,9 @@ li p {
 }
 /* tablet */
 @media (max-width: 45.5rem) {
+  .container::before {
+    display: none;
+  }
   .projects {
     flex-direction: column;
     height: 100%;
@@ -218,19 +247,19 @@ li p {
     height: 12.5rem;
   }
   .projects .web {
-    background: #000000 url("../assets/home/tablet/image-web-design.jpg") no-repeat;
+    background: #00000099 url("../assets/home/tablet/image-web-design.jpg") no-repeat;
   }
   .projects .app {
-    background: url("../assets/home/tablet/image-graphic-design.jpg");
+    background: #00000099 url("../assets/home/tablet/image-app-design.jpg");
   }
 }
 /* mobile */
 @media (max-width: 23.125rem) {
   .projects .web {
-    background: url("../assets/home/mobile/image-web-design.jpg");
+    background: #00000099 url("../assets/home/mobile/image-web-design.jpg");
   }
   .projects .app {
-    background: url("../assets/home/mobile/image-graphic-design.jpg");
+    background: #00000099 url("../assets/home/mobile/image-app-design.jpg");
   }
   .container {
     padding: 0rem 0rem 10rem 0rem;

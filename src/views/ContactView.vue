@@ -151,8 +151,25 @@ export default {
 </template>
 
 <style scoped>
+main {
+  overflow: hidden;
+}
 .container {
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative;
   padding: 0rem 10.3125rem;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  right: -7.5rem;
+  bottom: -55rem;
+  z-index: -100;
+  width: 100%;
+  max-width: 69.125rem;
+  height: 37.125rem;
+  background: url("../assets/shared/desktop/bg-pattern-leaf.svg") no-repeat;
 }
 .form {
   background: #E7816B url("../assets/contact/desktop/bg-pattern-hero-desktop.svg") no-repeat;
@@ -283,6 +300,9 @@ button {
 @media (max-width: 71.25rem) {
   .container {
     padding: 0rem 1.25rem;
+  }
+  .container::after {
+    display: none;
   }
 }
 @media (max-width: 50rem) {

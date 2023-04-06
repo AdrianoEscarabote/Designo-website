@@ -84,6 +84,20 @@ export default {
 <style scoped>
 .container {
   padding: 0rem 10.3125rem 10rem 10.3125rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  position: relative;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  left: 0rem;
+  top: 20rem;
+  height: 37.125rem;
+  width: 100%;
+  max-width: 62.875rem;
+  z-index: -100;
+  background: url("../assets/shared/desktop/bg-pattern-leaf.svg") no-repeat;
 }
 .introduction {
   padding: 72px 96px 72px 96px;
@@ -186,10 +200,20 @@ li p {
   color: #FFFFFF;
 }
 .projects .web {
-  background: #000000 url("../assets/home/desktop/image-web-design-small.jpg") no-repeat;
+  background: #00000099 url("../assets/home/desktop/image-web-design-small.jpg") no-repeat;
+  background-blend-mode: overlay;
+  transition: 0.2s ease-in-out;
 }
 .projects .graphic {
-  background: #000000 url("../assets/home/desktop/image-graphic-design.jpg") ;
+  background: #00000099 url("../assets/home/desktop/image-graphic-design.jpg");
+  background-blend-mode: overlay;
+  transition: 0.2s ease-in-out;
+}
+.projects .web:hover,
+.projects .web:focus-visible,
+.projects .graphic:hover,
+.projects .graphic:focus-visible {
+  background-color: #e7826b3b;
 }
 .projects h3 {
   font-weight: 500;
@@ -227,6 +251,9 @@ li p {
 }
 /* tablet */
 @media (max-width: 45.5rem) {
+  .container::before {
+    display: none;
+  }
   .projects {
     flex-direction: column;
     height: 100%;
@@ -235,19 +262,19 @@ li p {
     height: 12.5rem;
   }
   .projects .web {
-    background: #000000 url("../assets/home/tablet/image-web-design.jpg") no-repeat;
+    background: #00000099 url("../assets/home/tablet/image-web-design.jpg") no-repeat;
   }
   .projects .graphic {
-    background: url("../assets/home/tablet/image-graphic-design.jpg");
+    background: #00000099 url("../assets/home/tablet/image-graphic-design.jpg");
   }
 }
 /* mobile */
 @media (max-width: 23.125rem) {
   .projects .web {
-    background: url("../assets/home/mobile/image-web-design.jpg");
+    background: #00000099 url("../assets/home/mobile/image-web-design.jpg");
   }
   .projects .graphic {
-    background: url("../assets/home/mobile/image-graphic-design.jpg");
+    background: #00000099 url("../assets/home/mobile/image-graphic-design.jpg");
   }
 }
 @media (max-width: 23.4375rem) {
