@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container">
+    <div className="container">
       <nav aria-label="footer">
         <router-link to="/" aria-label="Designo - Home">
           <img src="../assets/shared/desktop/logo-light.png" alt="" width="202" height="27" />
@@ -23,19 +23,19 @@
           </li>
         </ul>
       </nav>
-      <div class-name="details">
-        <div class-name="col1">
+      <div className="details">
+        <div className="col1">
           <p>Designo Central Office
             <span>3886 Wellington Street</span>
             <span>Toronto, Ontario M9C 3J5</span>
           </p>
         </div>
-        <div class-name="col2">
+        <div className="col2">
           <p>Contac US (Central Office)</p>
           <p>P : +1 253-86308967</p>
           <p>M : contact@designo.co</p>
         </div>
-        <div class-name="col3">
+        <div className="col3">
           <ul>
             <li>
               <a href="www.facebook.com" target="_blank" aria-label="Facebook">

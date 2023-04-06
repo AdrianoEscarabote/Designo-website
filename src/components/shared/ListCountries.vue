@@ -26,14 +26,13 @@ section {
   justify-content: center;
 }
 ul {
-  padding: 10rem 10.3125rem 10rem 10.3125rem;
+  padding: 10rem 0rem 10rem 0rem;
   max-width: 69.375rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
-
 li {
   text-align: center;
   display: flex;
@@ -42,7 +41,6 @@ li {
   gap: 2.625rem;
   position: relative;
 }
-
 li::before {
   content: "";
   position: absolute;
@@ -53,7 +51,6 @@ li::before {
   top: 1.25rem;
   background: url("../../assets/shared/desktop/bg-pattern-small-circle.svg") no-repeat;
 }
-
 li p {
   font-weight: 500;
   font-size: 1.25rem;
@@ -74,19 +71,16 @@ li a {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
 /* tablet */
 @media (max-width: 59.25rem) {
   ul {
     padding: 10rem 1.25rem 10rem 1.25rem;
   }
 }
-
 /* mobile */
 @media (max-width: 41.875rem) {
   ul {
     flex-direction: column;
   }
 }
-
 </style>

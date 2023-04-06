@@ -36,15 +36,29 @@ export default {
             <RouterLink @click="isOpen = !isOpen" to="/locations" aria-label="Designo - Locations">locations</RouterLink>
           </li>
           <li>
-            <RouterLink @click="isOpen = !isOpen" v-on:blur="isOpen = !isOpen"  to="/contact" aria-label="contact">contact</RouterLink>
+            <RouterLink @click="isOpen = !isOpen" to="/contact" aria-label="Designo - contact">contact</RouterLink>
           </li>
         </ul>
       </div>
+      <ul className="list_desktop">
+        <li>
+          <RouterLink to="about" aria-label="Designo - Company">our company</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="locations" aria-label="Designo - Locations">locations</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="contact" aria-label="Designo - contact">contact</RouterLink>
+        </li>
+      </ul>
     </nav>
   </header>
 </template>
 
 <style scoped>
+.wrapper_list ul {
+  display: none;
+}
 header {
   display: flex;
   justify-content: center;
@@ -93,11 +107,17 @@ li a:hover {
   }
 }
 /* mobile menu */
-@media (max-width: 38.75rem) {
+@media (max-width: 620px) {
+  .list_desktop {
+    display: none;
+  } 
   .wrapper_list {
     position: absolute;
     left: 0rem;
     top: 8.75rem;
+  }
+  .wrapper_list ul {
+    display: flex;
   }
   .wrapper_list.open {
     background-color: rgba(0, 0, 0, 0.589);

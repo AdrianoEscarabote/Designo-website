@@ -61,6 +61,7 @@ p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.625rem;
+  max-width: 345px;
 }
 @media (max-width: 86.875rem) {
   section {

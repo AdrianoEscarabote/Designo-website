@@ -1,12 +1,12 @@
 <template>
   <section>
-    <div class="container">
-      <div class="col1">
+    <div className="container">
+      <div className="col1">
         <h3>Let’s talk about your project</h3>
         <p> Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
       </div>
-      <div class="col2">
-        <a href="/">Get in touch</a>
+      <div className="col2">
+        <RouterLink to="/contact">Get in touch</RouterLink>
       </div>
     </div>
   </section>
@@ -15,7 +15,7 @@
 <style scoped>
 section {
   color: white;
-  background: linear-gradient(0deg, #1D1C1E 30%, rgba(255,255,255,1) 30%);
+  background: linear-gradient(0deg, #1D1C1E 30%, transparent 30%);
   padding: 0rem 1.25rem;
 }
 .col1 {
@@ -88,5 +88,4 @@ a:hover {
     background: linear-gradient(0deg, #1D1C1E 50%, rgba(255,255,255,1) 50%);
   }
 }
-
 </style>
