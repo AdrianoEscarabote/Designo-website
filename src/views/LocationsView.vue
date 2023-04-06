@@ -1,16 +1,59 @@
 <script>
 import Layout from '../components/Layout.vue';
 import GetInTouch from '../components/shared/GetInTouch.vue';
+import L from 'leaflet';
 
 export default {
-  name: "Designo Locations",
+  name: "DesignoLocations",
   mounted() {
     document.title = "Designo - Locations"
+
+    const iconAu = L.icon({
+      iconUrl: "../../src/assets/locations/desktop/location.png",
+      iconSize: [64, 64],
+      iconAnchor: [43.64413273653292, -79.39455013058529]
+    })
+
+    const iconUk = L.icon({
+      iconUrl: "../../src/assets/locations/desktop/location.png",
+      iconSize: [64, 64],
+      iconAnchor: [-30.329322639132222, 149.78823392523591]
+    })
+
+    const iconCa = L.icon({
+      iconUrl: "../../src/assets/locations/desktop/location.png",
+      iconSize: [64, 64],
+      iconAnchor: [51.73232364932982, -3.8619642790420636]
+    })
+
+    const map = L.map('map').setView([43.64413273653292, -79.39455013058529], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      zoomControl: false,
+      attributionControl: false,
+    }).addTo(map);
+
+    L.marker([43.64413273653292, -79.39455013058529], { icon: iconCa}).addTo(map)
+
+    const map1 = L.map('map1').setView([-30.329322639132222, 149.78823392523591], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      zoomControl: false,
+      attributionControl: false,
+    }).addTo(map1);
+
+    L.marker([-30.329322639132222, 149.78823392523591], { icon: iconAu}).addTo(map1)
+
+    const map2 = L.map('map2').setView([51.73232364932982, -3.8619642790420636], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      zoomControl: false,
+      attributionControl: false,
+    }).addTo(map2);
+
+    L.marker([51.73232364932982, -3.8619642790420636], { icon: iconUk}).addTo(map2)
   },
   components: {
     Layout,
     GetInTouch
-}
+  }
 }
 </script>
 
@@ -36,24 +79,12 @@ export default {
             </div>
           </div>
           <div class="col2">
-            <picture>
-              <source
-                srcset="../assets/locations/tablet/image-map-canada.png"
-                media="(max-width: 1148px)"
-              />
-              <img src="../assets/locations/desktop/image-map-canada.png" alt="" width="350" height="326" />
-            </picture>
+            <div id="map"></div>
           </div>
         </section>
         <section class="country au">
           <div class="col2">
-            <picture>
-              <source
-                srcset="../assets/locations/tablet/image-map-australia.png"
-                media="(max-width: 1148px)"
-              />
-              <img src="../assets/locations/desktop/image-map-australia.png" alt="" width="350" height="326" />
-            </picture>
+            <div id="map1"></div>
           </div>
           <div class="col1">
             <h2>Australia</h2>
@@ -88,13 +119,7 @@ export default {
             </div>
           </div>
           <div class="col2">
-            <picture>
-              <source
-                srcset="../assets/locations/tablet/image-map-uk.png"
-                media="(max-width: 1148px)"
-              />
-              <img src="../assets/locations/desktop/image-map-united-kingdom.png" alt="" width="350" height="326" />
-            </picture>
+            <div id="map2"></div>
           </div>
         </section>
       </div>
@@ -125,10 +150,20 @@ export default {
   border-radius: 0.9375rem;
   width: 100%;
   max-width: 45.625rem;
+  height: 100%;
 }
 .col2 {
-  border-radius: 0.9375rem;
   overflow: hidden;
+  width: 320px;
+  border-radius: 0.9375rem;
+  height: 100%;
+}
+
+#map,
+#map1,
+#map2 {
+  height: 100%;
+  width: 100%;
 }
 h2 {
   font-weight: 500;
@@ -155,7 +190,7 @@ h2 {
   line-height: 1.625rem;
   color: #333136;
 }
-@media (max-width: 71.25rem) {
+@media (max-width: 1140px) {
   .container {
     padding: 0rem 1.25rem 10rem 1.25rem;
   }
@@ -170,12 +205,14 @@ h2 {
     width: 100%;
     object-fit: cover;
   }
-  .col2 {
-    height: 100%;
-  }
   .country.au {
     flex-direction: column !important;
   }
+  .col2 {
+    width: 100%;
+    height: 320px;
+  }
+
   .col1 {
     padding: 2.5rem 5.9375rem;
   }

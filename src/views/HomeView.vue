@@ -3,6 +3,7 @@ import Layout from "../components/Layout.vue"
 import GetInTouch from "../components/shared/GetInTouch.vue";
 import ListFeatures from "../components/ListFeatures.vue";
 import ListDesigns from "../components/ListDesigns.vue";
+import { RouterLink } from "vue-router";
 
 export default {
   name: 'HomeView',
@@ -13,7 +14,8 @@ export default {
     Layout,
     GetInTouch,
     ListFeatures,
-    ListDesigns
+    ListDesigns,
+    RouterLink
   } 
 }
 </script>
@@ -26,7 +28,7 @@ export default {
           <div class="col1">
             <h1>Award-winning custom designs and digital branding solutions</h1>
             <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
-            <a href="/">learn more</a>
+            <RouterLink to="/about">learn more</RouterLink>
           </div>
           <div class="col2">
             <img src="../assets/home/desktop/image-hero-phone.png" alt="" />
@@ -106,8 +108,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2.5rem;
+  height: 26.25rem;
   max-width: 33.75rem;
 }
 .introduction .col1 h1 {
