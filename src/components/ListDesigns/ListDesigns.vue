@@ -3,17 +3,17 @@
     <div className="col1">
       <RouterLink to="/web-design" aria-label="Designo - Web Design">
         <h2>web design</h2>
-        <p>view projects <img src="../assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
+        <p>view projects <img src="../../assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
       </RouterLink>
     </div>
     <div className="col2">
       <RouterLink to="/app-design" class="app" aria-label="Designo - App Design">
         <h2>app design</h2>
-        <p>view projects <img src="../assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
+        <p>view projects <img src="../../assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
       </RouterLink>
       <RouterLink to="/graphic-design" class="graphic" aria-label="Designo - Graphic Design">  
         <h2>graphic design</h2>
-        <p>view projects <img src="../assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
+        <p>view projects <img src="../../assets/shared/desktop/icon-right-arrow.svg" alt=""></p>
       </RouterLink>
     </div>
   </section>
@@ -30,7 +30,7 @@
   color: #FFFFFF;
   text-align: center;
 }
-.grid-items a {
+a {
   width: 100%;
   height: 100%;
   display: grid;
@@ -71,17 +71,17 @@
   text-transform: uppercase;
 }
 .grid-items .col1 a {
-  background: url("../assets/home/desktop/image-web-design-large.jpg") no-repeat #00000099;
+  background: url("../../assets/home/desktop/image-web-design-large.jpg") no-repeat #00000099;
   background-blend-mode: overlay;
   transition: 0.2s ease-in-out;
 }
 .grid-items .app {
-  background: url("../assets/home/desktop/image-app-design.jpg") no-repeat #00000099;
+  background: url("../../assets/home/desktop/image-app-design.jpg") no-repeat #00000099;
   background-blend-mode: overlay;
   transition: 0.2s ease-in-out;
 }
 .grid-items .graphic {
-  background: url("../assets/home/desktop/image-graphic-design.jpg") no-repeat #00000099;
+  background: url("../../assets/home/desktop/image-graphic-design.jpg") no-repeat #00000099;
   background-blend-mode: overlay;
   transition: 0.2s ease-in-out;
 }
@@ -109,13 +109,13 @@
     height: 26.875rem;
   }
   .grid-items .col1 {
-    background: #00000099 no-repeat url("../assets/home/tablet/image-web-design.jpg");
+    background: #00000099 no-repeat url("../../assets/home/tablet/image-web-design.jpg");
   }
   .grid-items .app {
-    background: #00000099 no-repeat url("../assets/home/tablet/image-app-design.jpg");
+    background: #00000099 no-repeat url("../../assets/home/tablet/image-app-design.jpg");
   }
   .grid-items .graphic {
-    background: #00000099 no-repeat url("../assets/home/tablet/image-graphic-design.jpg");
+    background: #00000099 no-repeat url("../../assets/home/tablet/image-graphic-design.jpg");
   }
 }
 @media (max-width: 26.25rem) {
@@ -125,13 +125,13 @@
 }
 @media (max-width: 22.5rem) {
   .grid-items .col1 {
-    background: #00000099 no-repeat url("../assets/home/mobile/image-web-design.jpg");
+    background: #00000099 no-repeat url("../../assets/home/mobile/image-web-design.jpg");
   }
   .grid-items .app {
-    background: #00000099 no-repeat url("../assets/home/mobile/image-app-design.jpg");
+    background: #00000099 no-repeat url("../../assets/home/mobile/image-app-design.jpg");
   }
   .grid-items .graphic {
-    background: #00000099 no-repeat url("../assets/home/mobile/image-graphic-design.jpg");
+    background: #00000099 no-repeat url("../../assets/home/mobile/image-graphic-design.jpg");
   }
 }
 </style>

@@ -13,17 +13,17 @@ export default {
   <section>
     <ul>
       <li>
-        <img src="../../assets/shared/desktop/illustration-canada.svg" alt="Canada" />
+        <img src="../../../assets/shared/desktop/illustration-canada.svg" alt="Canada" />
         <p>Canada</p>
         <RouterLink to="/locations" aria-label="Location Canada">see location</RouterLink>
       </li>
       <li>
-        <img src="../../assets/shared/desktop/illustration-australia.svg" alt="Australia">
+        <img src="../../../assets/shared/desktop/illustration-australia.svg" alt="Australia">
         <p>Australia</p>
         <RouterLink to="/locations" aria-label="Location Australia">see location</RouterLink>
       </li>
       <li>
-        <img src="../../assets/shared/desktop/illustration-united-kingdom.svg" alt="United Kingdom">
+        <img src="../../../assets/shared/desktop/illustration-united-kingdom.svg" alt="United Kingdom">
         <p>United Kingdom</p>
         <RouterLink to="/locations" aria-label="Location United Kingdom">see location</RouterLink>
       </li>
@@ -60,7 +60,7 @@ li::before {
   border-radius: 50%;
   left: 0rem;
   top: 1.25rem;
-  background: url("../../assets/shared/desktop/bg-pattern-small-circle.svg") no-repeat;
+  background: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg") no-repeat;
 }
 li p {
   font-weight: 500;

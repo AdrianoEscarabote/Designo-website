@@ -31,7 +31,7 @@ section {
   display: grid;
   grid-template-columns: 50% 50%;
   border-radius: 0.9375rem;
-  background: #E7806B url("../../assets/shared/desktop/bg-pattern-call-to-action.svg") no-repeat;
+  background: #E7806B url("../../../assets/shared/desktop/bg-pattern-call-to-action.svg") no-repeat;
   background-position: right 50%;
   background-size: auto 200%;
 }

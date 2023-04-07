@@ -3,7 +3,7 @@
     <div className="container">
       <nav aria-label="footer">
         <router-link to="/" aria-label="Designo - Home">
-          <img src="../assets/shared/desktop/logo-light.png" alt="" width="202" height="27" />
+          <img src="../../assets/shared/desktop/logo-light.png" alt="" width="202" height="27" />
         </router-link>
         <ul>
           <li>
@@ -39,27 +39,27 @@
           <ul>
             <li>
               <a href="/" target="_blank" aria-label="Facebook">
-                <img src="../assets/shared/desktop/icon-facebook.svg" alt="" />
+                <img src="../../assets/shared/desktop/icon-facebook.svg" alt="" />
               </a>
             </li>
             <li>
               <a href="/" target="_blank" aria-label="Youtube">
-                <img src="../assets/shared/desktop/icon-youtube.svg" alt="" />
+                <img src="../../assets/shared/desktop/icon-youtube.svg" alt="" />
               </a>
             </li>
             <li>
               <a href="/" target="_blank" aria-label="Twitter">
-                <img src="../assets/shared/desktop/icon-twitter.svg" alt="">
+                <img src="../../assets/shared/desktop/icon-twitter.svg" alt="">
               </a>
             </li>
             <li>
               <a href="/" target="_blank" aria-label="Pinterest">
-                <img src="../assets/shared/desktop/icon-pinterest.svg" alt="">
+                <img src="../../assets/shared/desktop/icon-pinterest.svg" alt="">
               </a>
             </li>
             <li>
               <a href="/" target="_blank" aria-label="Instagram">
-                <img src="../assets/shared/desktop/icon-instagram.svg" alt="">
+                <img src="../../assets/shared/desktop/icon-instagram.svg" alt="">
               </a>
             </li>
           </ul>

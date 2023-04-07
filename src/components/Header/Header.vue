@@ -21,11 +21,11 @@ export default {
   <header>
     <nav aria-label="main">
       <RouterLink to="/" aria-label="Designo - Home">
-        <img src="../assets/shared/desktop/logo-dark.png" alt="" width="196" height="24" />
+        <img src="../../assets/shared/desktop/logo-dark.png" alt="" width="196" height="24" />
       </RouterLink>
       <button @click="isOpen = !isOpen">
-        <img src="../assets/shared/mobile/icon-hamburger.svg" class="icon-menu" v-if=" !this.$props.isOpen " alt="" />
-        <img src="../assets/shared/mobile/icon-close.svg" class="icon-close" v-if=" this.$props.isOpen " alt="" />
+        <img src="../../assets/shared/mobile/icon-hamburger.svg" class="icon-menu" v-if=" !this.$props.isOpen " alt="" />
+        <img src="../../assets/shared/mobile/icon-close.svg" class="icon-close" v-if=" this.$props.isOpen " alt="" />
       </button>
       <div class="wrapper_list" :aria-expanded="{ 'true' : isOpen }" :class="{ 'open': isOpen }" @click="isOpen = !isOpen">
         <ul :class="{ 'list-mobile': isOpen }" @click="$event.stopPropagation()">
@@ -75,6 +75,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 90rem;
   padding: 4.0625rem 10.3125rem;
 }
