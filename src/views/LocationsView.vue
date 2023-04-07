@@ -1,7 +1,6 @@
 <script>
 import Layout from '../components/Layout.vue';
 import GetInTouch from '../components/shared/GetInTouch.vue';
-import L from 'leaflet';
 
 export default {
   name: "DesignoLocations",
