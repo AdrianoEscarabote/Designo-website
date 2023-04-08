@@ -1,6 +1,6 @@
 <script>
-import Layout from '../components/Layout.vue';
-import ListCountries from '../components/shared/ListCountries.vue';
+import Layout from '../components/Layout/Layout.vue';
+import ListCountries from '../components/shared/ListCountries/ListCountries.vue';
 
 export default {
   name: "Designo Contact",

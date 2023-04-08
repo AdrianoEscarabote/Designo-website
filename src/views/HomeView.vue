@@ -1,8 +1,8 @@
 <script>
-import Layout from "../components/Layout.vue"
-import GetInTouch from "../components/shared/GetInTouch.vue";
-import ListFeatures from "../components/ListFeatures.vue";
-import ListDesigns from "../components/ListDesigns.vue";
+import Layout from "../components/Layout/Layout.vue"
+import GetInTouch from "../components/shared/GetInTouch/GetInTouch.vue";
+import ListFeatures from "../components/ListFeatures/ListFeatures.vue";
+import ListDesigns from "../components/ListDesigns/ListDesigns.vue";
 import { RouterLink } from "vue-router";
 
 export default {

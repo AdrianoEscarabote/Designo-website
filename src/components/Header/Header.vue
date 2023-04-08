@@ -27,7 +27,7 @@ export default {
         <img src="../../assets/shared/mobile/icon-hamburger.svg" class="icon-menu" v-if=" !this.$props.isOpen " alt="" />
         <img src="../../assets/shared/mobile/icon-close.svg" class="icon-close" v-if=" this.$props.isOpen " alt="" />
       </button>
-      <div class="wrapper_list" :aria-expanded="{ 'true' : isOpen }" :class="{ 'open': isOpen }" @click="isOpen = !isOpen">
+      <div class="wrapper_list" :aria-expanded="isOpen ? 'true' : 'false'" :class="{ 'open': isOpen }" @click="isOpen = !isOpen">
         <ul :class="{ 'list-mobile': isOpen }" @click="$event.stopPropagation()">
           <li>
             <RouterLink @click="isOpen = !isOpen" to="/about" aria-label="Designo - Company">our company</RouterLink>

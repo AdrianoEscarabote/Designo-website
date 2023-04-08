@@ -1,9 +1,32 @@
-<script setup>
-import { RouterView } from 'vue-router'
+<script>
+export default {
+  title: "App",
+  components: {
+    RouterView,
+    Spinner
+  },
+  data() {
+    return {
+      isLoading: true
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = false
+    }, 2000)
+  }
+}
 </script>
 
+<script setup>
+import Spinner from 'vue-spinner/src/PacmanLoader.vue';
+import { RouterView } from 'vue-router'
+</script>
 <template>
-  <RouterView />
+  <div class="wrapper_spinner" v-if="isLoading">
+    <Spinner :loading="isLoading" :scale="0.5" color="#E7816B" aria-expanded="true" />
+  </div>
+  <RouterView v-else />
 </template>
 
 <style>
@@ -44,7 +67,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 /* Make images easier to work with */
 img,
@@ -90,7 +113,20 @@ body::-webkit-scrollbar-track {
   background: transparent;        
 }
 body::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: #44FFA1; 
+  background: #E7816B; 
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #FFAD9B; 
+}
+.hidden {
+  overflow: hidden !important;
+}
+.wrapper_spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 </style>

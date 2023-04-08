@@ -1,18 +1,15 @@
-import Header from "../Header/Header.vue"
-import Footer from "../Footer/Footer.vue"
+import Layout from "../Layout/Layout.vue"
 
 export default {
   title: "Layout",
   components: { 
-    Header,
-    Footer 
+    Layout
   }
 }
 
 const Template = () => ({
   components: {
-    Header,
-    Footer
+    Layout
   },
   data() {
     return {
@@ -20,9 +17,7 @@ const Template = () => ({
     }
   },
   template: `
-    <Layout>
-
-    </Layout>
+    <Layout />
   `
 })
 

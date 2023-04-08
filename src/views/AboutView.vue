@@ -1,7 +1,7 @@
 <script>
-import Layout from '../components/Layout.vue';
-import GetInTouch from '../components/shared/GetInTouch.vue';
-import ListCountries from "../components/shared/ListCountries.vue"
+import Layout from '../components/Layout/Layout.vue';
+import GetInTouch from '../components/shared/GetInTouch/GetInTouch.vue';
+import ListCountries from "../components/shared/ListCountries/ListCountries.vue"
 
 export default {
   name: "Designo About",
