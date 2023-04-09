@@ -8,19 +8,19 @@ export default {
     document.title = "Designo - Locations"
 
     const iconAu = L.icon({
-      iconUrl: "../../src/assets/locations/desktop/location.png",
+      iconUrl: "../src/assets/locations/desktop/location.png",
       iconSize: [64, 64],
       iconAnchor: [43.64413273653292, -79.39455013058529]
     })
 
     const iconUk = L.icon({
-      iconUrl: "../../src/assets/locations/desktop/location.png",
+      iconUrl: "../src/assets/locations/desktop/location.png",
       iconSize: [64, 64],
       iconAnchor: [-30.329322639132222, 149.78823392523591]
     })
 
     const iconCa = L.icon({
-      iconUrl: "../../src/assets/locations/desktop/location.png",
+      iconUrl: "../src/assets/locations/desktop/location.png",
       iconSize: [64, 64],
       iconAnchor: [51.73232364932982, -3.8619642790420636]
     })
